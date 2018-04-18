@@ -1,0 +1,151 @@
+/* CSS Document */
+.dropbtn {
+
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #000000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover 
+{
+	color:#F00;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.border-bottom
+{
+	border-bottom:1px solid #CCC;
+}
+
+.border-bottom:hover
+{
+	padding-left: 25px !important;
+    color: #F00 !important;
+    -webkit-transition: padding-left 1.4s;
+    transition: padding-left 1.4s;
+}
+
+.product
+{
+	transition:all .3s;
+    margin-top: -25px;
+    margin-bottom: 10px;
+}
+
+.product:hover
+{
+	box-shadow:0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+.bg-header
+{
+	background-color: #f2f2f2;
+}
+
+.bg-header-product
+{
+	margin:10px 0 10px 0;
+	padding:10px;
+	background-color: #f2f2f2;
+}
+
+#toTop
+{
+	position: fixed;
+	bottom: 35px;
+	right: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+.img-hover:hover
+{
+    transition: all .2s;
+    opacity: 0.5;
+}
+
+
+.overlay-container
+{
+  position: relative;
+  width: 100%;
+}
+
+.overlay-product 
+{
+  position: absolute;
+  bottom: 36%;
+  left: 0;
+  right: 0;
+  background: none repeat scroll 0 0 rgba(121, 117, 101, 0.6);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .3s ease;
+}
+
+.overlay-container:hover .overlay-product
+{
+  height: 13%;
+}
+
+.text {
+  width:100%;
+  color: #f7ea3f;
+  font-size: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align:left;
+ 
+}
+
+.text span i
+{
+	display:block;
+}
+
+.text:hover
+{
+	padding-left: 15px !important;
+    color: #0f0 !important;
+    -webkit-transition: padding-left 1.4s;
+    transition: padding-left 1.4s;
+}
+
+.text-hover:hover
+{
+	color:red;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+

@@ -1,0 +1,63 @@
+RewriteEngine On
+RewriteRule ^(.*) - [E=BASE:%1]
+
+RewriteRule ^dang-nhap.html$ dang_nhap.php
+RewriteRule ^dang-ky-tai-khoan.html$ dang_ky_tai_khoan.php
+
+RewriteRule ^lien-he-chung-toi.html$ lien_he.php
+
+RewriteRule ^san-pham/tim-kiem-san-pham.html$ tim_kiem_san_pham.php
+RewriteRule ^san-pham/danh-sach-san-pham.html$ danh_sach_san_pham.php
+RewriteRule ^san-pham/danh-sach-san-pham/([0-9]+)$ danh_sach_san_pham.php?page=$1
+RewriteRule ^san-pham/([a-zA-Z0-9_-]+) chi_tiet_san_pham.php?key=$1
+
+RewriteRule ^danh-muc/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+) danh_sach_san_pham_theo_loai.php?ma_loai=$2
+
+
+RewriteRule ^khach-hang/them-san-pham.html$ khach_hang_them_san_pham.php
+RewriteRule ^khach-hang/gio-hang.html$ khach_hang_xem_gio_hang.php
+RewriteRule ^khach-hang/cap-nhat-gio-hang.html$ khach_hang_cap_nhat_gio_hang.php
+RewriteRule ^khach-hang/huy-gio-hang.html$ khach_hang_huy_gio_hang.php
+RewriteRule ^khach-hang/login.html$ khach_hang_dang_nhap.php
+RewriteRule ^khach-hang/dat-hang.html$ khach_hang_dat_hang.php
+RewriteRule ^khach-hang/thong-tin-don-dat-hang/([0-9]+)$ khach_hang_xem_thong_tin_dat_hang.php?id=$1
+
+RewriteRule ^bai-viet/danh-sach-bai-viet.html$ bai_viet.php
+RewriteRule ^bai-viet/danh-sach-bai-viet/([0-9]+)$ bai_viet.php?page=$1
+RewriteRule ^bai-viet/([a-zA-Z0-9_-]+) chi_tiet_bai_viet.php?key=$1
+
+
+
+RewriteRule ^quan-tri/he-thong.html$ he_thong.php
+
+RewriteRule ^quan-tri/them-san-pham.html$ them_san_pham.php
+RewriteRule ^quan-tri/danh-sach-san-pham.html$ danh_sach_san_pham_ad.php
+RewriteRule ^quan-tri/danh-sach-san-pham/([0-9]+)$ danh_sach_san_pham_ad.php?page=$1
+RewriteRule ^quan-tri/sua-san-pham/([0-9]+)$ sua_san_pham.php?masp=$1
+RewriteRule ^quan-tri/xoa-san-pham/([0-9]+)$ xoa_san_pham.php?masp=$1
+RewriteRule ^quan-tri/tra-gop-san-pham/([0-9]+)$ tra_gop_san_pham.php?masp=$1
+
+RewriteRule ^quan-tri/danh-sach-loai-san-pham.html$ danh_sach_loai_san_pham.php
+RewriteRule ^quan-tri/danh-sach-loai-san-pham/([0-9]+)$ danh_sach_loai_san_pham.php?page=$1
+RewriteRule ^quan-tri/them-loai-san-pham.html them_loai_san_pham.php
+RewriteRule ^quan-tri/sua-loai-san-pham/([0-9]+)$ sua_loai_san_pham.php?maloai=$1
+RewriteRule ^quan-tri/xoa-loai-san-pham/([0-9]+)$ xoa_loai_san_pham.php?maloai=$1
+
+RewriteRule ^quan-tri/don-dat-hang.html$ don_dat_hang.php
+RewriteRule ^quan-tri/chi-tiet-don-hang/([0-9]+)$ chi_tiet_don_dat_hang.php?mahd=$1
+RewriteRule ^quan-tri/cap-nhat-tinh-trang/([0-9]+)$ cap_nhat_tinh_trang.php?mahd=$1
+RewriteRule ^quan-tri/xoa-don-dat-hang/([0-9]+)$ xoa_don_dat_hang.php?mahd=$1
+
+RewriteRule ^quan-tri/danh-sach-tai-khoan.html$ danh_sach_tai_khoan.php
+RewriteRule ^quan-tri/danh-sach-tai-khoan.html/([0-9]+)$ danh_sach_tai_khoan.php?page$1
+RewriteRule ^quan-tri/them-tai-khoan.html$ them_tai_khoan.php
+RewriteRule ^quan-tri/sua-tai-khoan/([0-9]+)$ sua_tai_khoan.php?matk=$1
+RewriteRule ^quan-tri/xoa-tai-khoan/([0-9]+)$ xoa_tai_khoan.php?matk=$1
+
+RewriteRule ^quan-tri/danh-sach-bai-viet.html$ danh_sach_bai_viet.php
+RewriteRule ^quan-tri/danh-sach-bai-viet/([0-9]+)$ danh_sach_bai_viet.php?page=$1
+RewriteRule ^quan-tri/them-bai-viet.html$ them_bai_viet.php
+RewriteRule ^quan-tri/xoa-bai-viet/([0-9]+)$ xoa_bai_viet.php?mabv=$1
+RewriteRule ^quan-tri/xoa-bai-viet/([0-9]+)$ xoa_bai_viet.php?mabv=$1
+
+RewriteRule ^nguoi_dung/thong-tin-nguoi_dung.html$ thong_tin_nguoi_dung.php
